@@ -1,0 +1,13 @@
+#!/bin/zsh
+
+read seminar_date
+cd ~/gdrive/lab/seminar/2021-study
+mkdir $seminar_date
+cp ~/Documents/seminar/S_semi/$seminar_date/slide.pdf ~/gdrive/lab/seminar/2021-study/$seminar_date
+
+cd ~/gdrive/lab/seminar/2021-study/$seminar_date/
+
+file="slide.pdf"
+nfile="fumiya_${seminar_date}.pdf"
+mv $file $nfile
+cd
